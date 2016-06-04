@@ -1,0 +1,243 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic);
+
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+}
+
+.header {
+    float: left;
+    position:fixed;
+    height: 100px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    background-color: #F9F9F9;
+    opacity: 0.8;
+}
+
+a {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight:300;
+  text-align: center;
+  color: #fff;
+  margin-top:100px;
+
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight:400;
+  text-align: right;
+  color: #000;
+  text-transform: uppercase;
+  float:right;
+  margin-top: -30px;
+  margin-right: 15px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight:400;
+  text-align: center;
+  color: #000;
+
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: #000;
+}
+
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+
+}
+
+h2:hover {
+  cursor: pointer;
+}
+
+h1:hover {
+  cursor:pointer;
+}
+
+
+
+.waterfall {
+    float: left;
+    height: 250px;
+    margin-left: 0%;
+    margin-top: 100px;
+    clear: none;
+    width: 100%;
+    background-color: #F3D077;
+    margin-right: 0%;
+    -webkit-transition: background 2s ease;
+-moz-transition: background 2s ease;
+-ms-transition: background 2s ease;
+-o-transition: background 2s ease;
+transition: background 2s ease;
+}
+
+
+
+.birds-cherping {
+    float: left;
+    height: 250px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: 0%;
+    background-color: #F59465;
+}
+
+.wind {
+    float: left;
+    height: 250px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: 0%;
+    background-color: #D977A5;
+}
+
+.rain-drops {
+    float: left;
+    height: 250px;
+    margin-left: 0%;
+    margin-top: 0px;
+    clear: none;
+    width: 100%;
+    margin-right: 0%;
+    background-color: #73556E;
+}
+
+
+audio {
+  display: none;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+
+
+
+/* Modal Box */
+
+/* [Object] Modal
+ * =============================== */
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0,0,0, .9);
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 50%;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
